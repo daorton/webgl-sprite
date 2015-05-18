@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>webgl-sprite</h1>
+
+<p>Project to help learn WebGL and other web APIs, Javascript ES6, and some simple game programming concepts.</p>
+
+<ul><li>Minimalist, no dependency execise of WebGL (for 2D), Web Audio, and Gamepad APIs</li><li>Uses WebGL to implement 2D sprites with the built in window.requestAnimationFrame</li><li>Coded in ECMAScript 6; using node Babel for compilation and Browserify for Javascript module handling</li><li>Some attempt to separate out common code in a library</li><li>Takes advantage of ability to mix HTML UI elements with WebGL canvas without needing special WebGL implemented fonts or UI components</li><li>&quot;Sprite&quot; sheets built and packed into a Texture2D from image files dynamically</li><li>Some attempt to make work across browsers - no sound or gamepad in IE 11 though</li><li>Will run on android (chrome) and ios (safari) but &quot;mouse&quot; input not implemented!</li></ul>
+
+<p><a href="https://daorton.github.io/webgl-sprite/shooter/index.html">2D Shooting game test</a></p>
+
+<p><a href="https://daorton.github.io/webgl-sprite/breakout/index.html">2D breakout game test</a></p>
+
+<p>To try with a gamepad, click the checkbox and press a button on the gamepad to notify the web page. The first joystick is used for moving and &quot;A&quot; button for shooting.</p>
+
+<p>To build (Linux) use <code>make</code> (or <code>make -j</code>) with the default target. You will need node babel and browserify.</p>
+
+<body>
+<html>

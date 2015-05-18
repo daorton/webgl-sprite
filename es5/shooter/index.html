@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <link rel="icon" href="../lib/img/favicon.ico">
+    <style type="text/css">
+      #webgl   { position:absolute; left: 0; top: 0; cursor: none; }
+      #overlay { display: none; position:absolute; left: 0; top: 0; padding: 10px; margin: 0; }
+      #overlay.focus   { background-color: rgba(255, 255, 0, 1.0); }
+      #overlay.nofocus { background-color: rgba(255, 255, 0, 0.1); }
+      .indent { margin-left: 20px; }
+      #gameover { display:none; position:absolute; left: 0; top: 0; font-size: 100px; color: rgba(255, 0, 0, 0.8); }
+    </style>
+  </head>
+  <body>
+    <canvas id="webgl"></canvas>
+    <div id="overlay">
+      <div><input id="sound" type="checkbox">Enable Sound (s key)</div>
+      <div><input id="gamepad" type="checkbox">Use gamepad</div>
+      <div class="indent">&lt;escape&gt; to pause</div>
+      <div class="indent">Health: <span id="health"></span></div>
+      <div class="indent">Score: <span id="score"></span></div>
+    </div>
+    <div id="gameover">Game Over!</div>
+    <script type="text/javascript" src="bundle.js">  </script>
+  </body>
+</html>
